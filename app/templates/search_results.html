@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Resultados para "{{ query }}"</h2>
+{% if results %}
+    <ul>
+    {% for user in results %}
+        <li>{{ user.username }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>Parece que esto está muy solitario :/</p>
+{% endif %}
+
+{% endblock%}

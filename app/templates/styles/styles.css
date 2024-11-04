@@ -1,0 +1,57 @@
+/* Estilos personalizados para la barra de navegación */
+.navbar {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del formulario de búsqueda */
+form .form-control {
+    width: 300px;
+}
+
+form button {
+    background-color: #fff;
+    color: #007bff;
+}
+
+/* Añadir espacio entre los botones */
+.ms-3 {
+    margin-left: 1rem;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1000px;
+}
+
+/* Espaciado para los elementos dentro del contenido principal */
+.mt-5 {
+    margin-top: 3rem;
+}
+
+.chat {
+    position: fixed; /* Hace que el botón esté fijo en la pantalla */
+    bottom: 20px; /* Espaciado desde la parte inferior */
+    right: 20px; /* Espaciado desde la derecha */
+    background-color: #007bff; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin bordes */
+    border-radius: 50%; /* Forma circular */
+    width: 60px; /* Ancho del botón */
+    height: 60px; /* Alto del botón */
+    font-size: 24px; /* Tamaño de la fuente */
+    display: flex; /* Para centrar el contenido */
+    align-items: center; /* Centrado vertical */
+    justify-content: center; /* Centrado horizontal */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra del botón */
+    transition: background-color 0.3s, transform 0.3s; /* Transición suave */
+}
+
+.chat:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el ratón */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+}
+
+.chat:active {
+    transform: scale(1); /* Vuelve al tamaño original al hacer clic */
+}
